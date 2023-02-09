@@ -84,10 +84,10 @@ class MainScreen extends Component {
           >
             <Text> Go to Redux Screen </Text>
           </TouchableOpacity>
-          {/* <Button
-            title="Go to SearchScreen"
-            onPress={() => this.props.navigation.navigate("SearchScreen")}
-          /> */}
+          <Button
+            title="Go to RegisterFormScreen"
+            onPress={() => this.props.navigation.navigate("RegisterForm")}
+          />
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate("Counter Redux")}
           >

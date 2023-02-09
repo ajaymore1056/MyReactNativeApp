@@ -152,10 +152,10 @@ class HomeScreen extends Component {
     dummyData[index].num == 0
       ? (dummyData[index].num = 1)
       : (dummyData[index].num = 0); // num value change using index
-    // this.props.navigation.navigate('ChatScreen', {
-    //   userName: item.userName, // we pass the value
-    //   message: item.message,
-    // }); // we pass only username from item
+    this.props.navigation.navigate('ChatScreen', {
+      userName: item.userName, // we pass the value
+      message: item.message,
+    }); // we pass only username from item
     this.refresh();
     //dummyData.splice(index,1);  // row delete permenent
   };
