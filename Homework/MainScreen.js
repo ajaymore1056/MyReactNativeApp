@@ -97,6 +97,10 @@ class MainScreen extends Component {
             title="Go to NextScreen"
             onPress={() => this.props.navigation.navigate("NextScreen")}
           />
+          <Button
+            title="Go to LoginScreen"
+            onPress={() => this.props.navigation.navigate("LoginForm")}
+          />
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate("ImageBackground")}
           >
