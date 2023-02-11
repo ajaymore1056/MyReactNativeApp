@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Alert, Image, StyleSheet, Text, TextInput,Keyboard, TouchableOpacity, View } from 'react-native';
 import Button from '../component/Button';
 import Input from '../component/Input';
-import Loader from '../component/Loader';
-import UserProfile from './UserProfile';
 
 const RegisterForm = ({navigation}) => {
   const [inputs, setInputs] = React.useState({
@@ -139,15 +137,12 @@ const RegisterForm = ({navigation}) => {
         </View>
       </View>
 
-      <Button title="Submit" onPress={validate} />
+      <Button title="Submit" onPress={validate} lasticon='arrow-right'/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  viewTexInput: {
-    margin: 10,
-  },
   iconView: {
     width: 35,
     height: 35,
@@ -160,21 +155,6 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
     alignSelf: "center"
-  },
-  textStyle: {
-    marginLeft: 25,
-    backgroundColor: "#FFFFFF",
-    paddingLeft: 5,
-    paddingRight: 10,
-    position: "absolute"
-  },
-  input: {
-    height: 40,
-    marginTop: 10,
-    paddingHorizontal: 25,
-    borderWidth: 1,
-    borderRadius: 20,
-    padding: 10,
   },
 })
 

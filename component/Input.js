@@ -22,7 +22,7 @@ const Input = ({ label, iconName, error, password, onFocus = () => { }, ...props
       {password && (
         <Icon
           onPress={() => setHidePassword(!hidePassword)}
-          name={hidePassword ? 'eye-outline' : 'eye-off-outline'}
+          name={hidePassword ? 'eye-off-outline' : 'eye-circle-outline' }
           style={{ color: Colors.darkBlue, fontSize: 22, position: "absolute", alignSelf: "flex-end", padding: 15 }}
         />
       )}
