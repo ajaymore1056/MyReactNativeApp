@@ -129,6 +129,8 @@ import ApplyIPoScreen from "./Homework/ApplyIPOScreen";
 import RegisterForm from "./TheSwiperWork/RegisterForm";
 import { BlogProvider } from "./src/context/BlogContext";
 import LoginScreen from "./Screens/LoginScreeen";
+import RegistrationScreen from "./Screens/RegisterScreen";
+import UserProfile from "./TheSwiperWork/UserProfile";
 
 const Stack = createNativeStackNavigator();
 
@@ -182,8 +184,10 @@ class App extends Component {
               <Stack.Screen name="QuickLinksScreen" component={QuickLinks} />
               <Stack.Screen name="IndexScreen" component={IndexScreen} />
               <Stack.Screen name="RegisterForm" component={RegisterForm} />
-              <Stack.Screen name="LoginForm" component={LoginScreen} />
+              <Stack.Screen name="LoginScreen" component={LoginScreen} />
               <Stack.Screen name="ApplyIPoScreen" component={ApplyIPoScreen} />
+              <Stack.Screen name="RegisterScreen" component={RegistrationScreen} />
+              <Stack.Screen name="UserProfile" component={UserProfile} />
             </Stack.Navigator>
           </BlogProvider>
         </Provider>

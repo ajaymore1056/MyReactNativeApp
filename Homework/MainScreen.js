@@ -6,7 +6,7 @@ class MainScreen extends Component {
     return (
       <ScrollView>
         <View style={{ justifyContent: "center", alignItems: "center" }}>
-          <TouchableOpacity
+          {/* <TouchableOpacity
             onPress={() => this.props.navigation.navigate("Addition")}
           >
             <Text>Go to Addition Screen </Text>
@@ -97,6 +97,7 @@ class MainScreen extends Component {
             title="Go to NextScreen"
             onPress={() => this.props.navigation.navigate("NextScreen")}
           />
+         
           <Button
             title="Go to LoginScreen"
             onPress={() => this.props.navigation.navigate("LoginForm")}
@@ -137,7 +138,16 @@ class MainScreen extends Component {
           <Button
             title="Go to ApplyIPoScreen"
             onPress={() => this.props.navigation.navigate("ApplyIPoScreen")}
+          /> */}
+          <Button
+            title="Go to RegisterformScreen"
+            onPress={() => this.props.navigation.navigate("RegisterForm")}
           />
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate("RegisterScreen")}
+          >
+            <Text> Go to RegisterFormScreen screen </Text>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     );
