@@ -65,7 +65,6 @@ const RegisterForm = ({navigation}) => {
 
   const onPressSubmit = () => {
     const data = JSON.stringify(inputs);
-    // console.warn(data);
     setLoading(true);
     navigation.navigate("UserProfile", {data});
   };
